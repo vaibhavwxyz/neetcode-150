@@ -11,4 +11,8 @@ function letterCombinations(digits) {
   // TODO
 }
 
-module.exports = { letterCombinations };
+// --- tests ---
+console.log(letterCombinations("23"));
+// ["ad","ae","af","bd","be","bf","cd","ce","cf"]  (order may vary)
+console.log(letterCombinations("")); // []
+console.log(letterCombinations("2")); // ["a", "b", "c"]

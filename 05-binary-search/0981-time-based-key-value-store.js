@@ -21,4 +21,12 @@ class TimeMap {
   }
 }
 
-module.exports = { TimeMap };
+// --- tests ---
+const tm = new TimeMap();
+tm.set("foo", "bar", 1);
+console.log(tm.get("foo", 1)); // "bar"
+console.log(tm.get("foo", 3)); // "bar"
+tm.set("foo", "bar2", 4);
+console.log(tm.get("foo", 4)); // "bar2"
+console.log(tm.get("foo", 5)); // "bar2"
+console.log(tm.get("foo", 0)); // ""

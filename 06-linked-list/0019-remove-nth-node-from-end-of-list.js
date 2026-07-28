@@ -7,11 +7,16 @@
  * Space: O()
  */
 
-// Definition for singly-linked list node:
-// function ListNode(val, next) { this.val = val; this.next = next; }
+// ListNode: { val, next }
+const toList = (a) => a.reduceRight((next, val) => ({ val, next }), null);
+
+const fromList = (h) => { const out = []; while (h) { out.push(h.val); h = h.next; } return out; };
 
 function removeNthFromEnd(head, n) {
   // TODO
 }
 
-module.exports = { removeNthFromEnd };
+// --- tests ---
+console.log(fromList(removeNthFromEnd(toList([1, 2, 3, 4, 5]), 2))); // [1, 2, 3, 5]
+console.log(fromList(removeNthFromEnd(toList([1]), 1))); // []
+console.log(fromList(removeNthFromEnd(toList([1, 2]), 1))); // [1]

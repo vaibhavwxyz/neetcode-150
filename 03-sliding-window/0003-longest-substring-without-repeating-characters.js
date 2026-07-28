@@ -11,4 +11,7 @@ function lengthOfLongestSubstring(s) {
   // TODO
 }
 
-module.exports = { lengthOfLongestSubstring };
+// --- tests ---
+console.log(lengthOfLongestSubstring("abcabcbb")); // 3
+console.log(lengthOfLongestSubstring("bbbbb")); // 1
+console.log(lengthOfLongestSubstring("pwwkew")); // 3

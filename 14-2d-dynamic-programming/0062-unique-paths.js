@@ -11,4 +11,6 @@ function uniquePaths(m, n) {
   // TODO
 }
 
-module.exports = { uniquePaths };
+// --- tests ---
+console.log(uniquePaths(3, 7)); // 28
+console.log(uniquePaths(3, 2)); // 3

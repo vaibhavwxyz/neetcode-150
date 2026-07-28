@@ -11,4 +11,6 @@ function multiply(num1, num2) {
   // TODO
 }
 
-module.exports = { multiply };
+// --- tests ---
+console.log(multiply("2", "3")); // "6"
+console.log(multiply("123", "456")); // "56088"

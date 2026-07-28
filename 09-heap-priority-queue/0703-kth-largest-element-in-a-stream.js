@@ -17,4 +17,10 @@ class KthLargest {
   }
 }
 
-module.exports = { KthLargest };
+// --- tests ---
+const kth = new KthLargest(3, [4, 5, 8, 2]);
+console.log(kth.add(3)); // 4
+console.log(kth.add(5)); // 5
+console.log(kth.add(10)); // 5
+console.log(kth.add(9)); // 8
+console.log(kth.add(4)); // 8

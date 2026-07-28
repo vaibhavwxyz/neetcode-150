@@ -11,4 +11,8 @@ function findItinerary(tickets) {
   // TODO
 }
 
-module.exports = { findItinerary };
+// --- tests ---
+console.log(findItinerary([["MUC", "LHR"], ["JFK", "MUC"], ["SFO", "SJC"], ["LHR", "SFO"]]));
+// ["JFK", "MUC", "LHR", "SFO", "SJC"]
+console.log(findItinerary([["JFK", "SFO"], ["JFK", "ATL"], ["SFO", "ATL"], ["ATL", "JFK"], ["ATL", "SFO"]]));
+// ["JFK", "ATL", "JFK", "SFO", "ATL", "SFO"]

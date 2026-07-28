@@ -25,4 +25,11 @@ class Trie {
   }
 }
 
-module.exports = { Trie };
+// --- tests ---
+const trie = new Trie();
+trie.insert("apple");
+console.log(trie.search("apple")); // true
+console.log(trie.search("app")); // false
+console.log(trie.startsWith("app")); // true
+trie.insert("app");
+console.log(trie.search("app")); // true

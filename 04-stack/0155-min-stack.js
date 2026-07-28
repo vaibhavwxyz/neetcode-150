@@ -29,4 +29,12 @@ class MinStack {
   }
 }
 
-module.exports = { MinStack };
+// --- tests ---
+const st = new MinStack();
+st.push(-2);
+st.push(0);
+st.push(-3);
+console.log(st.getMin()); // -3
+st.pop();
+console.log(st.top()); // 0
+console.log(st.getMin()); // -2

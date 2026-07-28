@@ -11,4 +11,6 @@ function reverseBits(n) {
   // TODO
 }
 
-module.exports = { reverseBits };
+// --- tests ---
+console.log(reverseBits(43261596)); // 964176192
+console.log(reverseBits(4294967293)); // 3221225471

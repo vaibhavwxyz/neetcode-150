@@ -11,4 +11,6 @@ function countComponents(n, edges) {
   // TODO
 }
 
-module.exports = { countComponents };
+// --- tests ---
+console.log(countComponents(5, [[0, 1], [1, 2], [3, 4]])); // 2
+console.log(countComponents(5, [[0, 1], [1, 2], [2, 3], [3, 4]])); // 1

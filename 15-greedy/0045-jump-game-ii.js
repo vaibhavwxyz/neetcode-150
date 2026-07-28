@@ -11,4 +11,6 @@ function jump(nums) {
   // TODO
 }
 
-module.exports = { jump };
+// --- tests ---
+console.log(jump([2, 3, 1, 1, 4])); // 2
+console.log(jump([2, 3, 0, 1, 4])); // 2

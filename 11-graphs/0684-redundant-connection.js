@@ -11,4 +11,6 @@ function findRedundantConnection(edges) {
   // TODO
 }
 
-module.exports = { findRedundantConnection };
+// --- tests ---
+console.log(findRedundantConnection([[1, 2], [1, 3], [2, 3]])); // [2, 3]
+console.log(findRedundantConnection([[1, 2], [2, 3], [3, 4], [1, 4], [1, 5]])); // [1, 4]

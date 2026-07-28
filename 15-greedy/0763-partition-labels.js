@@ -11,4 +11,6 @@ function partitionLabels(s) {
   // TODO
 }
 
-module.exports = { partitionLabels };
+// --- tests ---
+console.log(partitionLabels("ababcbacadefegdehijhklij")); // [9, 7, 8]
+console.log(partitionLabels("eccbbbbdec")); // [10]

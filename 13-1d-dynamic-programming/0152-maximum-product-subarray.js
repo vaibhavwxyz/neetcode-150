@@ -11,4 +11,6 @@ function maxProduct(nums) {
   // TODO
 }
 
-module.exports = { maxProduct };
+// --- tests ---
+console.log(maxProduct([2, 3, -2, 4])); // 6
+console.log(maxProduct([-2, 0, -1])); // 0

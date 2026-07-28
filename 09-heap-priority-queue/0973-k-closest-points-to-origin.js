@@ -11,4 +11,6 @@ function kClosest(points, k) {
   // TODO
 }
 
-module.exports = { kClosest };
+// --- tests ---
+console.log(kClosest([[1, 3], [-2, 2]], 1)); // [[-2, 2]]
+console.log(kClosest([[3, 3], [5, -1], [-2, 4]], 2)); // [[3, 3], [-2, 4]]  (order may vary)

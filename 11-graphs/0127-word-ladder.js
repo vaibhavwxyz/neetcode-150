@@ -11,4 +11,6 @@ function ladderLength(beginWord, endWord, wordList) {
   // TODO
 }
 
-module.exports = { ladderLength };
+// --- tests ---
+console.log(ladderLength("hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"])); // 5
+console.log(ladderLength("hit", "cog", ["hot", "dot", "dog", "lot", "log"])); // 0

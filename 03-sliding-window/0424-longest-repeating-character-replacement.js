@@ -11,4 +11,6 @@ function characterReplacement(s, k) {
   // TODO
 }
 
-module.exports = { characterReplacement };
+// --- tests ---
+console.log(characterReplacement("ABAB", 2)); // 4
+console.log(characterReplacement("AABABBA", 1)); // 4

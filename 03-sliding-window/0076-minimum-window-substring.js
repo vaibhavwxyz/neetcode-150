@@ -11,4 +11,7 @@ function minWindow(s, t) {
   // TODO
 }
 
-module.exports = { minWindow };
+// --- tests ---
+console.log(minWindow("ADOBECODEBANC", "ABC")); // "BANC"
+console.log(minWindow("a", "a")); // "a"
+console.log(minWindow("a", "aa")); // ""

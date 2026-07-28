@@ -7,11 +7,25 @@
  * Space: O()
  */
 
-// Definition for singly-linked list node:
-// function ListNode(val, next) { this.val = val; this.next = next; }
+// ListNode: { val, next }
+const toList = (a) => a.reduceRight((next, val) => ({ val, next }), null);
+
+const withCycle = (a, pos) => {
+  const head = toList(a);
+  if (pos < 0) return head;
+  let tail = head;
+  while (tail.next) tail = tail.next;
+  let cyc = head;
+  for (let i = 0; i < pos; i++) cyc = cyc.next;
+  tail.next = cyc;
+  return head;
+};
 
 function hasCycle(head) {
   // TODO
 }
 
-module.exports = { hasCycle };
+// --- tests ---
+console.log(hasCycle(withCycle([3, 2, 0, -4], 1))); // true
+console.log(hasCycle(withCycle([1, 2], 0))); // true
+console.log(hasCycle(withCycle([1], -1))); // false

@@ -11,4 +11,6 @@ function countBits(n) {
   // TODO
 }
 
-module.exports = { countBits };
+// --- tests ---
+console.log(countBits(2)); // [0, 1, 1]
+console.log(countBits(5)); // [0, 1, 1, 2, 1, 2]

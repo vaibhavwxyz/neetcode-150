@@ -11,4 +11,6 @@ function isAnagram(s, t) {
   // TODO
 }
 
-module.exports = { isAnagram };
+// --- tests ---
+console.log(isAnagram("anagram", "nagaram")); // true
+console.log(isAnagram("rat", "car")); // false

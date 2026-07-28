@@ -11,4 +11,6 @@ function longestPalindrome(s) {
   // TODO
 }
 
-module.exports = { longestPalindrome };
+// --- tests ---
+console.log(longestPalindrome("babad")); // "bab"  ("aba" also valid)
+console.log(longestPalindrome("cbbd")); // "bb"

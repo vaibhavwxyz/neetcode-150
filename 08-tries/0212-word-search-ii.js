@@ -11,4 +11,9 @@ function findWords(board, words) {
   // TODO
 }
 
-module.exports = { findWords };
+// --- tests ---
+console.log(findWords(
+  [["o", "a", "a", "n"], ["e", "t", "a", "e"], ["i", "h", "k", "r"], ["i", "f", "l", "v"]],
+  ["oath", "pea", "eat", "rain"],
+)); // ["oath", "eat"]  (order may vary)
+console.log(findWords([["a", "b"], ["c", "d"]], ["abcb"])); // []

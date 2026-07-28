@@ -21,4 +21,12 @@ class WordDictionary {
   }
 }
 
-module.exports = { WordDictionary };
+// --- tests ---
+const wd = new WordDictionary();
+wd.addWord("bad");
+wd.addWord("dad");
+wd.addWord("mad");
+console.log(wd.search("pad")); // false
+console.log(wd.search("bad")); // true
+console.log(wd.search(".ad")); // true
+console.log(wd.search("b..")); // true

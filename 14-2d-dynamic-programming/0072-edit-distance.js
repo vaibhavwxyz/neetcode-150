@@ -11,4 +11,6 @@ function minDistance(word1, word2) {
   // TODO
 }
 
-module.exports = { minDistance };
+// --- tests ---
+console.log(minDistance("horse", "ros")); // 3
+console.log(minDistance("intention", "execution")); // 5

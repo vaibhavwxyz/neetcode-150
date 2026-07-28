@@ -11,4 +11,7 @@ function isMatch(s, p) {
   // TODO
 }
 
-module.exports = { isMatch };
+// --- tests ---
+console.log(isMatch("aa", "a")); // false
+console.log(isMatch("aa", "a*")); // true
+console.log(isMatch("ab", ".*")); // true

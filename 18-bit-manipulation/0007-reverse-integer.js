@@ -11,4 +11,7 @@ function reverse(x) {
   // TODO
 }
 
-module.exports = { reverse };
+// --- tests ---
+console.log(reverse(123)); // 321
+console.log(reverse(-123)); // -321
+console.log(reverse(120)); // 21

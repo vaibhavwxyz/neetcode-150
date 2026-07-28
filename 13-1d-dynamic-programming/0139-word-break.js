@@ -11,4 +11,7 @@ function wordBreak(s, wordDict) {
   // TODO
 }
 
-module.exports = { wordBreak };
+// --- tests ---
+console.log(wordBreak("leetcode", ["leet", "code"])); // true
+console.log(wordBreak("applepenapple", ["apple", "pen"])); // true
+console.log(wordBreak("catsandog", ["cats", "dog", "sand", "and", "cat"])); // false

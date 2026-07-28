@@ -11,4 +11,7 @@ function subsets(nums) {
   // TODO
 }
 
-module.exports = { subsets };
+// --- tests ---
+console.log(subsets([1, 2, 3]));
+// [[], [1], [1,2], [1,2,3], [1,3], [2], [2,3], [3]]  (order may vary)
+console.log(subsets([0])); // [[], [0]]

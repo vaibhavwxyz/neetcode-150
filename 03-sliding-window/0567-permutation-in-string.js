@@ -11,4 +11,6 @@ function checkInclusion(s1, s2) {
   // TODO
 }
 
-module.exports = { checkInclusion };
+// --- tests ---
+console.log(checkInclusion("ab", "eidbaooo")); // true
+console.log(checkInclusion("ab", "eidboaoo")); // false

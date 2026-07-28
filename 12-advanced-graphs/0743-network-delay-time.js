@@ -11,4 +11,7 @@ function networkDelayTime(times, n, k) {
   // TODO
 }
 
-module.exports = { networkDelayTime };
+// --- tests ---
+console.log(networkDelayTime([[2, 1, 1], [2, 3, 1], [3, 4, 1]], 4, 2)); // 2
+console.log(networkDelayTime([[1, 2, 1]], 2, 1)); // 1
+console.log(networkDelayTime([[1, 2, 1]], 2, 2)); // -1

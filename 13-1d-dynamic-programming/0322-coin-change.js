@@ -11,4 +11,7 @@ function coinChange(coins, amount) {
   // TODO
 }
 
-module.exports = { coinChange };
+// --- tests ---
+console.log(coinChange([1, 2, 5], 11)); // 3
+console.log(coinChange([2], 3)); // -1
+console.log(coinChange([1], 0)); // 0

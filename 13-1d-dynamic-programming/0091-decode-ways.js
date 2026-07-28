@@ -11,4 +11,7 @@ function numDecodings(s) {
   // TODO
 }
 
-module.exports = { numDecodings };
+// --- tests ---
+console.log(numDecodings("12")); // 2
+console.log(numDecodings("226")); // 3
+console.log(numDecodings("06")); // 0

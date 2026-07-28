@@ -11,4 +11,7 @@ function myPow(x, n) {
   // TODO
 }
 
-module.exports = { myPow };
+// --- tests ---
+console.log(myPow(2, 10)); // 1024
+console.log(myPow(2.1, 3)); // 9.261
+console.log(myPow(2, -2)); // 0.25

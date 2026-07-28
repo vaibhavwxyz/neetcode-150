@@ -11,4 +11,13 @@ function solve(board) {
   // TODO
 }
 
-module.exports = { solve };
+// --- tests ---
+const region = [
+  ["X", "X", "X", "X"],
+  ["X", "O", "O", "X"],
+  ["X", "X", "O", "X"],
+  ["X", "O", "X", "X"],
+];
+solve(region);
+console.log(region);
+// [["X","X","X","X"], ["X","X","X","X"], ["X","X","X","X"], ["X","O","X","X"]]

@@ -11,4 +11,7 @@ function solveNQueens(n) {
   // TODO
 }
 
-module.exports = { solveNQueens };
+// --- tests ---
+console.log(solveNQueens(4));
+// [[".Q..", "...Q", "Q...", "..Q."], ["..Q.", "Q...", "...Q", ".Q.."]]  (order may vary)
+console.log(solveNQueens(1)); // [["Q"]]

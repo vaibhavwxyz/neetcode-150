@@ -11,4 +11,7 @@ function findDuplicate(nums) {
   // TODO
 }
 
-module.exports = { findDuplicate };
+// --- tests ---
+console.log(findDuplicate([1, 3, 4, 2, 2])); // 2
+console.log(findDuplicate([3, 1, 3, 4, 2])); // 3
+console.log(findDuplicate([3, 3, 3, 3, 3])); // 3

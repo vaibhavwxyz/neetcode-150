@@ -11,4 +11,6 @@ function mergeTriplets(triplets, target) {
   // TODO
 }
 
-module.exports = { mergeTriplets };
+// --- tests ---
+console.log(mergeTriplets([[2, 5, 3], [1, 8, 4], [1, 7, 5]], [2, 7, 5])); // true
+console.log(mergeTriplets([[3, 4, 5], [4, 5, 6]], [3, 2, 5])); // false

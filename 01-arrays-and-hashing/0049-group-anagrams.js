@@ -11,4 +11,8 @@ function groupAnagrams(strs) {
   // TODO
 }
 
-module.exports = { groupAnagrams };
+// --- tests ---
+console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]));
+// [["eat","tea","ate"], ["tan","nat"], ["bat"]]  (order may vary)
+console.log(groupAnagrams([""])); // [[""]]
+console.log(groupAnagrams(["a"])); // [["a"]]

@@ -29,4 +29,12 @@ class Twitter {
   }
 }
 
-module.exports = { Twitter };
+// --- tests ---
+const tw = new Twitter();
+tw.postTweet(1, 5);
+console.log(tw.getNewsFeed(1)); // [5]
+tw.follow(1, 2);
+tw.postTweet(2, 6);
+console.log(tw.getNewsFeed(1)); // [6, 5]
+tw.unfollow(1, 2);
+console.log(tw.getNewsFeed(1)); // [5]

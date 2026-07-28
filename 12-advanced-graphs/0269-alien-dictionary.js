@@ -11,4 +11,7 @@ function alienOrder(words) {
   // TODO
 }
 
-module.exports = { alienOrder };
+// --- tests ---
+console.log(alienOrder(["wrt", "wrf", "er", "ett", "rftt"])); // "wertf"
+console.log(alienOrder(["z", "x"])); // "zx"
+console.log(alienOrder(["z", "x", "z"])); // ""

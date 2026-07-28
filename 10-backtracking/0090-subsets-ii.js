@@ -11,4 +11,7 @@ function subsetsWithDup(nums) {
   // TODO
 }
 
-module.exports = { subsetsWithDup };
+// --- tests ---
+console.log(subsetsWithDup([1, 2, 2]));
+// [[], [1], [1,2], [1,2,2], [2], [2,2]]  (order may vary)
+console.log(subsetsWithDup([0])); // [[], [0]]

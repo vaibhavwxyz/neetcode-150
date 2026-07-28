@@ -11,4 +11,7 @@ function rob(nums) {
   // TODO
 }
 
-module.exports = { rob };
+// --- tests ---
+console.log(rob([2, 3, 2])); // 3
+console.log(rob([1, 2, 3, 1])); // 4
+console.log(rob([1, 2, 3])); // 3

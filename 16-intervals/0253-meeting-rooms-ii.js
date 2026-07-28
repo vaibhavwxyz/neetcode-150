@@ -11,4 +11,6 @@ function minMeetingRooms(intervals) {
   // TODO
 }
 
-module.exports = { minMeetingRooms };
+// --- tests ---
+console.log(minMeetingRooms([[0, 30], [5, 10], [15, 20]])); // 2
+console.log(minMeetingRooms([[7, 10], [2, 4]])); // 1

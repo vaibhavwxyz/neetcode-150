@@ -11,4 +11,6 @@ function canJump(nums) {
   // TODO
 }
 
-module.exports = { canJump };
+// --- tests ---
+console.log(canJump([2, 3, 1, 1, 4])); // true
+console.log(canJump([3, 2, 1, 0, 4])); // false

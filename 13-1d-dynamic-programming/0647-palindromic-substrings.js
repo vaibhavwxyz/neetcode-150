@@ -11,4 +11,6 @@ function countSubstrings(s) {
   // TODO
 }
 
-module.exports = { countSubstrings };
+// --- tests ---
+console.log(countSubstrings("abc")); // 3
+console.log(countSubstrings("aaa")); // 6

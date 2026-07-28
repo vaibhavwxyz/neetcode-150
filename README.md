@@ -38,11 +38,14 @@ neetcode/
 Each solution file is named `<zero-padded LeetCode number>-<slug>.js`, e.g.
 `01-arrays-and-hashing/0001-two-sum.js`.
 
-## Solution file template
+## Solution file layout
+
+Every file is self-contained and runnable — hit Run in the IDE (Code Runner) and the test
+cases print straight to the output pane. No imports, no exports, no test runner.
 
 ```js
 /**
- * 1. Two Sum  (Easy)
+ * 1. Two Sum — Easy
  * https://leetcode.com/problems/two-sum/
  *
  * Approach: one-pass hash map of value -> index.
@@ -50,17 +53,31 @@ Each solution file is named `<zero-padded LeetCode number>-<slug>.js`, e.g.
  * Space: O(n)
  */
 
-/**
- * @param {number[]} nums
- * @param {number} target
- * @return {number[]}
- */
 function twoSum(nums, target) {
-  // ...
+  // TODO
 }
 
-module.exports = { twoSum };
+// --- tests ---
+console.log(twoSum([2, 7, 11, 15], 9)); // [0, 1]
+console.log(twoSum([3, 2, 4], 6)); // [1, 2]
+console.log(twoSum([3, 3], 6)); // [0, 1]
 ```
+
+Fill in the function body and the `Approach` / `Time` / `Space` lines. The trailing comment on
+each `console.log` is the expected output — a few are marked `(order may vary)` where the
+problem accepts any ordering.
+
+Problems whose input is a linked list, binary tree, graph, or random-pointer list get small
+`toList` / `fromList`, `toTree` / `fromTree`, `toGraph` / `fromGraph` converters inlined at the
+top of the file, so tests read as plain arrays:
+
+```js
+console.log(fromList(reverseList(toList([1, 2, 3, 4, 5])))); // [5, 4, 3, 2, 1]
+console.log(maxDepth(toTree([3, 9, 20, null, null, 15, 7]))); // 3
+```
+
+Design problems (LRU Cache, Trie, MedianFinder, …) come as a class skeleton with a call
+sequence from the LeetCode example.
 
 ## Problems
 

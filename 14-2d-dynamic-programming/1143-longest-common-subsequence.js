@@ -11,4 +11,7 @@ function longestCommonSubsequence(text1, text2) {
   // TODO
 }
 
-module.exports = { longestCommonSubsequence };
+// --- tests ---
+console.log(longestCommonSubsequence("abcde", "ace")); // 3
+console.log(longestCommonSubsequence("abc", "abc")); // 3
+console.log(longestCommonSubsequence("abc", "def")); // 0

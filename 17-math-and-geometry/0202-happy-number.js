@@ -11,4 +11,6 @@ function isHappy(n) {
   // TODO
 }
 
-module.exports = { isHappy };
+// --- tests ---
+console.log(isHappy(19)); // true
+console.log(isHappy(2)); // false

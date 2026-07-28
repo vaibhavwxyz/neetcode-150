@@ -11,4 +11,7 @@ function generateParenthesis(n) {
   // TODO
 }
 
-module.exports = { generateParenthesis };
+// --- tests ---
+console.log(generateParenthesis(3));
+// ["((()))", "(()())", "(())()", "()(())", "()()()"]  (order may vary)
+console.log(generateParenthesis(1)); // ["()"]

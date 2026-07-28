@@ -11,4 +11,7 @@ function permute(nums) {
   // TODO
 }
 
-module.exports = { permute };
+// --- tests ---
+console.log(permute([1, 2, 3]));
+// [[1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], [3,2,1]]  (order may vary)
+console.log(permute([0, 1])); // [[0,1], [1,0]]

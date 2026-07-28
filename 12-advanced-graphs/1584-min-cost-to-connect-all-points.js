@@ -11,4 +11,6 @@ function minCostConnectPoints(points) {
   // TODO
 }
 
-module.exports = { minCostConnectPoints };
+// --- tests ---
+console.log(minCostConnectPoints([[0, 0], [2, 2], [3, 10], [5, 2], [7, 0]])); // 20
+console.log(minCostConnectPoints([[3, 12], [-2, 5], [-4, 1]])); // 18

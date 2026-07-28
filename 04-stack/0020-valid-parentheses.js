@@ -11,4 +11,7 @@ function isValid(s) {
   // TODO
 }
 
-module.exports = { isValid };
+// --- tests ---
+console.log(isValid("()")); // true
+console.log(isValid("()[]{}")); // true
+console.log(isValid("(]")); // false

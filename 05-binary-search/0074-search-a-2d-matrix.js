@@ -11,4 +11,7 @@ function searchMatrix(matrix, target) {
   // TODO
 }
 
-module.exports = { searchMatrix };
+// --- tests ---
+const matrix = [[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 60]];
+console.log(searchMatrix(matrix, 3)); // true
+console.log(searchMatrix(matrix, 13)); // false

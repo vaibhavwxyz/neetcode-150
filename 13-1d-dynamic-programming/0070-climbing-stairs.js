@@ -11,4 +11,7 @@ function climbStairs(n) {
   // TODO
 }
 
-module.exports = { climbStairs };
+// --- tests ---
+console.log(climbStairs(2)); // 2
+console.log(climbStairs(3)); // 3
+console.log(climbStairs(5)); // 8

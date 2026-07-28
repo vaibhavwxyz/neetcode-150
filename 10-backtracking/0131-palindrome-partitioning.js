@@ -11,4 +11,6 @@ function partition(s) {
   // TODO
 }
 
-module.exports = { partition };
+// --- tests ---
+console.log(partition("aab")); // [["a","a","b"], ["aa","b"]]  (order may vary)
+console.log(partition("a")); // [["a"]]

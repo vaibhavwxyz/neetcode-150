@@ -11,4 +11,8 @@ function checkValidString(s) {
   // TODO
 }
 
-module.exports = { checkValidString };
+// --- tests ---
+console.log(checkValidString("()")); // true
+console.log(checkValidString("(*)")); // true
+console.log(checkValidString("(*))")); // true
+console.log(checkValidString(")(")); // false

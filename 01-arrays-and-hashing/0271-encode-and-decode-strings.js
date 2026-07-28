@@ -15,4 +15,9 @@ function decode(str) {
   // TODO
 }
 
-module.exports = { encode, decode };
+// --- tests ---
+console.log(decode(encode(["neet", "code", "love", "you"])));
+// ["neet", "code", "love", "you"]
+console.log(decode(encode(["we", "say", ":", "yes"])));
+// ["we", "say", ":", "yes"]
+console.log(decode(encode([]))); // []

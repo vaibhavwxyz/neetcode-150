@@ -11,4 +11,6 @@ function findTargetSumWays(nums, target) {
   // TODO
 }
 
-module.exports = { findTargetSumWays };
+// --- tests ---
+console.log(findTargetSumWays([1, 1, 1, 1, 1], 3)); // 5
+console.log(findTargetSumWays([1], 1)); // 1

@@ -11,4 +11,6 @@ function maxProfit(prices) {
   // TODO
 }
 
-module.exports = { maxProfit };
+// --- tests ---
+console.log(maxProfit([1, 2, 3, 0, 2])); // 3
+console.log(maxProfit([1])); // 0

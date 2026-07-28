@@ -11,4 +11,6 @@ function topKFrequent(nums, k) {
   // TODO
 }
 
-module.exports = { topKFrequent };
+// --- tests ---
+console.log(topKFrequent([1, 1, 1, 2, 2, 3], 2)); // [1, 2]  (order may vary)
+console.log(topKFrequent([1], 1)); // [1]

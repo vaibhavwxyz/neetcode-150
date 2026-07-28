@@ -21,4 +21,10 @@ class MedianFinder {
   }
 }
 
-module.exports = { MedianFinder };
+// --- tests ---
+const mf = new MedianFinder();
+mf.addNum(1);
+mf.addNum(2);
+console.log(mf.findMedian()); // 1.5
+mf.addNum(3);
+console.log(mf.findMedian()); // 2

@@ -11,4 +11,6 @@ function maxCoins(nums) {
   // TODO
 }
 
-module.exports = { maxCoins };
+// --- tests ---
+console.log(maxCoins([3, 1, 5, 8])); // 167
+console.log(maxCoins([1, 5])); // 10

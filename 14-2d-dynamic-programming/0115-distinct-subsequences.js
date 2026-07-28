@@ -11,4 +11,6 @@ function numDistinct(s, t) {
   // TODO
 }
 
-module.exports = { numDistinct };
+// --- tests ---
+console.log(numDistinct("rabbbit", "rabbit")); // 3
+console.log(numDistinct("babgbag", "bag")); // 5

@@ -11,4 +11,7 @@ function getSum(a, b) {
   // TODO
 }
 
-module.exports = { getSum };
+// --- tests ---
+console.log(getSum(1, 2)); // 3
+console.log(getSum(2, 3)); // 5
+console.log(getSum(-1, 1)); // 0

@@ -11,4 +11,8 @@ function exist(board, word) {
   // TODO
 }
 
-module.exports = { exist };
+// --- tests ---
+const grid = [["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]];
+console.log(exist(grid, "ABCCED")); // true
+console.log(exist(grid, "SEE")); // true
+console.log(exist(grid, "ABCB")); // false
