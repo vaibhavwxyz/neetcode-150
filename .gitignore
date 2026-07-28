@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# logs
+*.log
+npm-debug.log*
+
+# editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# scratch work — keep experiments out of the repo
+scratch/
+tmp/
+
+# Claude Code local settings
+.claude/
