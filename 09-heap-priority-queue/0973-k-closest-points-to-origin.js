@@ -1,0 +1,14 @@
+/**
+ * 973. K Closest Points to Origin — Medium
+ * https://leetcode.com/problems/k-closest-points-to-origin/
+ *
+ * Approach:
+ * Time:  O()
+ * Space: O()
+ */
+
+function kClosest(points, k) {
+  // TODO
+}
+
+module.exports = { kClosest };
