@@ -8,7 +8,7 @@
  */
 
 function containsDuplicate(nums) {
-  // TODO
+  return new Set(nums).size !== nums.length;
 }
 
 // --- tests ---
