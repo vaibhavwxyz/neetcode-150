@@ -8,7 +8,9 @@
  */
 
 function isAnagram(s, t) {
-  // TODO
+  var sorted_s = s.split("").sort().join("");
+  var sorted_t = t.split("").sort().join("");
+  return sorted_s === sorted_t;
 }
 
 // --- tests ---
