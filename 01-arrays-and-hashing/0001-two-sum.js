@@ -8,7 +8,18 @@
  */
 
 function twoSum(nums, target) {
-  // TODO
+  let sum = 0;
+  let ans = [];
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      sum = nums[i] + nums[j];
+      if (target === sum) {
+        ans.push(i);
+        ans.push(j);
+        return ans;
+      }
+    }
+  }
 }
 
 // --- tests ---
